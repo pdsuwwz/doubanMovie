@@ -1,0 +1,5 @@
+module.exports = {
+  arrReplace: function(str){
+    return str.join(' / ')
+  }
+}

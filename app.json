@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/index"
+  ],
+  
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "最新豆瓣电影"
+  },
+  "tabBar": {
+    "selectedColor": "#08a3f5",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home_01.png",
+        "selectedIconPath": "/images/home_02.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于",
+        "iconPath": "/images/about_01.png",
+        "selectedIconPath": "/images/about_02.png"
+      }
+    ],
+    "borderStyle": "black"
+  }
+}
