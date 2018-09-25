@@ -5,9 +5,11 @@ Page({
 
   data: {
     movies: [],
-    movieType: "美国",
+    movieType: "喜剧",
     loading: true,
-    pageStart: 0
+    pageStart: 0,
+    btnMore: true,
+    btnMoreText: "More"
   },
 
   onLoad: function (options) {
@@ -25,7 +27,8 @@ Page({
     
   },
 
-  getMovieList: function() {
+  getMovieList: function(callback) {
+    callback = callback || function(){}
     wx.request({
       url: app.globalData.api + this.data.movieType + "&start=" + this.data.pageStart,
       header: {
@@ -39,17 +42,34 @@ Page({
           movies,
           loading
         })
+        callback()
       },
     })
   },
 
   handleMore: function(){
-    let { pageStart } = this.data
-    pageStart = pageStart + 20
-    this.setData({
-      pageStart
-    }, () => {
-      this.getMovieList()
-    })
+    let { btnMore, btnMoreText } = this.data
+    if (btnMore){
+      btnMore = false
+      btnMoreText = "loading..."
+      this.setData({
+        btnMore,
+        btnMoreText
+      })
+      let { pageStart } = this.data
+      pageStart = pageStart + 20
+      this.setData({
+        pageStart
+      }, () => {
+        this.getMovieList(() => {
+          btnMore = true
+          btnMoreText = "More"
+          this.setData({
+            btnMore,
+            btnMoreText
+          })
+        })
+      })
+    }
   }
 })

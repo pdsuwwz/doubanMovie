@@ -17,6 +17,6 @@
     </view>
   </view>
   <view wx:if="{{!loading}}" class="more" bindtap="handleMore">
-    <image src="/images/moveUp.png" class="more-icon"></image>加载更多
+    <image src="/images/moveUp.png" class="more-icon"></image>{{btnMoreText}}
   </view>
 </view>
