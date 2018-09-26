@@ -17,7 +17,8 @@ page {
 }
 
 .movie-list {
-  height: 2000rpx;
+  height: auto;
+  pointer-events: none;
 }
 
 .movie-list .item {
@@ -68,11 +69,12 @@ page {
   position: absolute;
   right: 0;
   bottom: 0;
-  padding: 8rpx 25rpx;
+  padding: 8rpx 26rpx;
   border-radius: 10rpx;
   color: #aaa;
   border: 1rpx solid #aaa;
   transition: .1s;
+  pointer-events: auto;
 }
 .movie-list .item .right .btn-details:active {
   color: #08a3f5;
