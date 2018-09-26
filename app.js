@@ -30,7 +30,8 @@ App({
 
   globalData: {
     // api: "https://douban.uieee.com/v2/movie/in_theaters",
-    api: "https://douban.uieee.com/v2/movie/search?tag=",
+    tagApi: "https://douban.uieee.com/v2/movie/search?tag=",
+    detailsApi: "https://douban.uieee.com/v2/movie/subject/"
   },
 
 })

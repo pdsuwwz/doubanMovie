@@ -1,14 +1,16 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/about/index"
+    "pages/about/index",
+    "pages/details/details"
   ],
-  
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "最新豆瓣电影"
+    "navigationBarTitleText": "最新豆瓣电影",
+    "navigationBarBackgroundColor": "#08a3f5"
   },
   "tabBar": {
+    "color": "#bfbfbf",
     "selectedColor": "#08a3f5",
     "list": [
       {

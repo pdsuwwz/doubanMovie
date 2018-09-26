@@ -1,5 +1,5 @@
 // pages/index/index.js
-const app = getApp()
+const App = getApp()
 
 Page({
 
@@ -16,21 +16,10 @@ Page({
     this.getMovieList()
   },
 
-  onReady: function () {
-  
-  },
-
-  onShow: function () {
-  },
-
-  onReachBottom: function () {
-    
-  },
-
   getMovieList: function(callback) {
     callback = callback || function(){}
     wx.request({
-      url: app.globalData.api + this.data.movieType + "&start=" + this.data.pageStart,
+      url: App.globalData.tagApi + this.data.movieType + "&start=" + this.data.pageStart,
       header: {
         "content-type": 'json'
       },
@@ -49,14 +38,16 @@ Page({
 
   handleMore: function(){
     let { btnMore, btnMoreText } = this.data
+    // 防止重复点击
     if (btnMore){
       btnMore = false
       btnMoreText = "loading..."
       this.setData({
         btnMore,
         btnMoreText
-      })
-      let { pageStart } = this.data
+      }) // 禁止点击底部加载更多按钮 ❎
+      
+      let { pageStart } = this.data // 获取更多电影数据
       pageStart = pageStart + 20
       this.setData({
         pageStart
@@ -67,9 +58,15 @@ Page({
           this.setData({
             btnMore,
             btnMoreText
-          })
+          }) // 恢复点击底部加载更多按钮 ✅
         })
       })
-    }
+    }else{}
+  },
+  toDetails: function(e){
+    let {id} = e.target.dataset
+    wx.navigateTo({
+      url: '../details/details?id=' + id,
+    })
   }
 })
