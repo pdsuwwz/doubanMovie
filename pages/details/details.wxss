@@ -1,1 +1,37 @@
 /* pages/details/details.wxss */
+.poster-wrap{
+  position: relative;
+  display: flex;
+  height: 400rpx;
+  background-color: #000;
+  overflow: hidden;
+}
+.poster-wrap .mask{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(10rpx);
+  transform: scale(1.2);
+  z-index: 1;
+}
+.poster-wrap .poster{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 192rpx;
+  height: 350rpx;
+  margin: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 2px 10px #000;
+  z-index: 2;
+}
