@@ -19,6 +19,7 @@ Page({
     })
     this.getMovieDetails((res) => {   
       details = res.data
+      console.log(details)
       this.setData({
         details
       })
