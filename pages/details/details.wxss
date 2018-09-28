@@ -20,7 +20,7 @@
   transform: scale(1.2);
   z-index: 1;
 }
-.poster-wrap .poster{
+.poster-wrap .center-wrap{
   position: absolute;
   left: 0;
   right: 0;
@@ -29,9 +29,37 @@
   width: 192rpx;
   height: 350rpx;
   margin: auto;
+  box-shadow: 36rpx -30rpx 20rpx -30rpx rgba(0, 0, 0, .5);
+  z-index: 2;
+}
+.poster-wrap .center-wrap .poster{
+  position: relative;
+  width: 192rpx;
+  height: 350rpx;
+  margin: auto;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0px 2px 10px #000;
-  z-index: 2;
+}
+.poster-wrap .center-wrap .poster:before{
+  content: "";
+  position: absolute;
+  right: 14rpx;
+  bottom: 16rpx;
+  width: 50rpx;
+  height: 50rpx;
+  box-shadow: 0rpx 20rpx 10rpx rgba(0, 0, 0, .5);
+  transform: skewX(20deg) rotate(12deg);
+  z-index: -1;
+}
+.poster-wrap .center-wrap .poster:after{
+  content: "";
+  position: absolute;
+  left: 14rpx;
+  bottom: 16rpx;
+  width: 50rpx;
+  height: 50rpx;
+  box-shadow: 0rpx 20rpx 10rpx rgba(0, 0, 0, .5);
+  transform: skewX(-20deg) rotate(-12deg);
+  z-index: -1;
 }

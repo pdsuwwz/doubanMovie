@@ -23,7 +23,11 @@ Page({
       this.setData({
         details
       })
+      wx.setNavigationBarTitle({
+        title: this.data.details.title
+      })
     })
+    
   },
   onHide: function(){
     let { id, data } = this.data
