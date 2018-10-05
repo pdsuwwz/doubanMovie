@@ -5,7 +5,8 @@
       <view class="poster" style="background-image: url({{details.images.small}})"></view>
     </view>
   </view>
-  <view>
-    <view></view>
+  <view class="content">
+    <view class="title">简介</view>
+    <view class="desc">{{details.summary}}</view>
   </view>
 </view>

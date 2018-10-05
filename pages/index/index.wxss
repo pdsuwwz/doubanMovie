@@ -2,6 +2,11 @@ page {
   overflow-x: hidden;
 }
 
+.loading{
+  display: block;
+  padding: 30rpx;
+}
+
 .movie-list {
   height: auto;
   pointer-events: none;

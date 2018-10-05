@@ -31,7 +31,8 @@ App({
   globalData: {
     // api: "https://douban.uieee.com/v2/movie/in_theaters",
     tagApi: "https://douban.uieee.com/v2/movie/search?tag=",
-    detailsApi: "https://douban.uieee.com/v2/movie/subject/"
+    detailsApi: "https://douban.uieee.com/v2/movie/subject/",
+    movieType: "剧情"
   },
 
 })

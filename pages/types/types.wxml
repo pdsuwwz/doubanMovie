@@ -1,6 +1,6 @@
 <view class="wrap">
-  <text>类型</text>
-  <view class="types-wrap">
-    <view class="item" wx:for="{{movieTypes}}" wx:key="{{index}}">{{item}}</view>
+  <text class="title">类型</text>
+  <view class="types-wrap" bindtap="typesChange">
+    <view class="item" wx:for="{{movieTypes}}" wx:key="{{index}}" data-name="{{item}}">{{item}}</view>
   </view>
 </view>

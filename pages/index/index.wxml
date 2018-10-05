@@ -1,6 +1,6 @@
 <wxs src="./index.wxs" module="tools" />
 <view class="movie-list" bindtap="toDetails">
-  <text wx:if="{{loading}}">loading...</text>
+  <text wx:if="{{loading}}" class="loading">loading...</text>
   <view class="item" wx:for="{{movies}}" wx:for-item="item" wx:key="{{item.id}}">
     <view class="box-wrap">
       <view class="left" style='background-image: url({{item.images.small}})'></view>

@@ -1,1 +1,5 @@
 /* pages/about/about.wxss */
+.title{
+  display: block;
+  padding: 30rpx;
+}

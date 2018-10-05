@@ -1,4 +1,5 @@
 // pages/types/types.js
+const App = getApp()
 Page({
 
   /**
@@ -9,14 +10,28 @@ Page({
   },
 
   onLoad: function (options) {
-
+    wx.setNavigationBarTitle({
+      title: "全部类型"
+    })
   },
 
   onShow: function () {
-
+    wx.setNavigationBarTitle({
+      title: "全部类型"
+    })
   },
 
   onHide: function () {
 
+  },
+
+  typesChange: function(e){
+    if (Object.keys(e.target.dataset).length != 0){
+      App.globalData.movieType = e.target.dataset.name
+      wx.reLaunch({
+        url: '../index/index',
+      })
+    }
   }
+
 })
