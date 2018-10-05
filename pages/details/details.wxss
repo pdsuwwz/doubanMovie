@@ -64,3 +64,29 @@
   transform: skewX(-20deg) rotate(-12deg);
   z-index: -1;
 }
+
+/* 内容区域  */
+
+.content{
+
+}
+
+.content .title{
+  display: block;
+  font-weight: 600;
+  font-size: 35rpx;
+  padding: 30rpx;
+}
+
+
+.content .desc{
+  width: 90%;
+  margin: auto;
+  padding: 30rpx;
+  line-height: 1.7;
+  font-size: 25rpx;
+  text-align: justify;
+  text-indent: 42rpx;
+}
+
+

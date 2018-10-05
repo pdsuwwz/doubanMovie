@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.title{
+  display: block;
+  padding: 30rpx 0 0;
+}
+
 .types-wrap{
   display: flex;
   flex-flow: row wrap;
@@ -11,9 +16,10 @@
   align-items: center;
 }
 .types-wrap .item{
-  width: 200rpx;
+  width: 300rpx;
   padding: 30rpx 0;
   margin: 30rpx 0;
   text-align: center;
-  background-color: pink;
+  color: #fff;
+  background-color: #08a3f5;
 }
