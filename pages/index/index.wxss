@@ -53,7 +53,16 @@ page {
   white-space: nowrap;
 }
 
+.movie-list .item .right .text-wrap-long {
+
+}
+
 .movie-list .item .right .text-wrap .value {
+  font-weight: 600;
+  color: #aaa;
+}
+
+.movie-list .item .right .text-wrap-long .value {
   font-weight: 600;
   color: #aaa;
 }

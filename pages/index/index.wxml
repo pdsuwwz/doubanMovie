@@ -9,6 +9,7 @@
         <view class="text-wrap">上映日期：<text class="value">{{item.mainland_pubdate? item.mainland_pubdate : '暂无'}}</text></view>
         <view class="text-wrap">片长：<text class="value">{{item.durations}}</text></view>
         <view class="text-wrap">类型：<text class="value">{{tools.arrReplace(item.genres)}}</text></view>
+        <view class="text-wrap-long">演员：<text class="value">{{tools.arrReplace2(item.casts)}}</text></view>
         <view class="btn-details" data-id="{{item.id}}"></view>
       </view>
     </view>

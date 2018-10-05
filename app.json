@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/types/types",
+    "pages/index/index",
     "pages/about/about",
     "pages/details/details"
   ],
@@ -14,12 +14,6 @@
     "color": "#bfbfbf",
     "selectedColor": "#08a3f5",
     "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "/images/home_01.png",
-        "selectedIconPath": "/images/home_02.png"
-      },
       {
         "pagePath": "pages/types/types",
         "text": "分类",
