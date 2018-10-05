@@ -1,0 +1,6 @@
+<view class="wrap">
+  <text>类型</text>
+  <view class="types-wrap">
+    <view class="item" wx:for="{{movieTypes}}" wx:key="{{index}}">{{item}}</view>
+  </view>
+</view>

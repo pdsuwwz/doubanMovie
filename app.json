@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/types/types",
+    "pages/about/about",
     "pages/index/index",
-    "pages/about/index",
     "pages/details/details"
   ],
   "window": {
@@ -20,7 +21,13 @@
         "selectedIconPath": "/images/home_02.png"
       },
       {
-        "pagePath": "pages/about/index",
+        "pagePath": "pages/types/types",
+        "text": "分类",
+        "iconPath": "/images/types_01.png",
+        "selectedIconPath": "/images/types_02.png"
+      },
+      {
+        "pagePath": "pages/about/about",
         "text": "关于",
         "iconPath": "/images/about_01.png",
         "selectedIconPath": "/images/about_02.png"

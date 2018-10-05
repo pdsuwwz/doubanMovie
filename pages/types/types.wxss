@@ -1,0 +1,19 @@
+.wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.types-wrap{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-start;
+  justify-content: space-between;
+  align-items: center;
+}
+.types-wrap .item{
+  width: 200rpx;
+  padding: 30rpx 0;
+  margin: 30rpx 0;
+  text-align: center;
+  background-color: pink;
+}

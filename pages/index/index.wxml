@@ -1,7 +1,4 @@
-<wxs  src="./index.wxs" module="tools" />
-<view class="header">
-  <text>电影列表</text>
-</view>
+<wxs src="./index.wxs" module="tools" />
 <view class="movie-list" bindtap="toDetails">
   <text wx:if="{{loading}}">loading...</text>
   <view class="item" wx:for="{{movies}}" wx:for-item="item" wx:key="{{item.id}}">
@@ -12,7 +9,7 @@
         <view class="text-wrap">上映日期：<text class="value">{{item.mainland_pubdate? item.mainland_pubdate : '暂无'}}</text></view>
         <view class="text-wrap">片长：<text class="value">{{item.durations}}</text></view>
         <view class="text-wrap">类型：<text class="value">{{tools.arrReplace(item.genres)}}</text></view>
-        <view class="btn-details" data-id="{{item.id}}">查看详情</view>
+        <view class="btn-details" data-id="{{item.id}}"></view>
       </view>
     </view>
   </view>

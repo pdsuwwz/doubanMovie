@@ -1,6 +1,11 @@
 <view>
   <view class="poster-wrap">
     <view class="mask" style="background-image: url({{details.images.small}})"></view>
-    <view class="poster" style="background-image: url({{details.images.small}})"></view>
+    <view class="center-wrap">
+      <view class="poster" style="background-image: url({{details.images.small}})"></view>
+    </view>
+  </view>
+  <view>
+    <view></view>
   </view>
 </view>

@@ -1,19 +1,5 @@
 page {
-  padding-top: 135rpx;
   overflow-x: hidden;
-}
-
-.header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  text-align: center;
-  font-size: 40rpx;
-  padding: 35rpx 0;
-  border-bottom: 1px solid #eee;
-  background-color: #fff;
-  z-index: 1;
 }
 
 .movie-list {
@@ -22,14 +8,16 @@ page {
 }
 
 .movie-list .item {
+  position: relative;
   border-bottom: 1rpx solid #eee;
   padding: 20rpx;
   transition: 0.1s;
   align-items: center;
+  
 }
 
 .movie-list .item:active {
-  /* background-color: rgba(0, 0, 0, 0.1); */
+   background-color: rgba(0, 0, 0, 0.1); 
 }
 
 .movie-list .box-wrap {
@@ -67,23 +55,20 @@ page {
 
 .movie-list .item .right .btn-details {
   position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  padding: 8rpx 26rpx;
-  border-radius: 10rpx;
-  color: #aaa;
-  border: 1rpx solid #aaa;
-  transition: .1s;
-  pointer-events: auto;
-}
-.movie-list .item .right .btn-details:active {
-  color: #08a3f5;
-  border: 1rpx solid #08a3f5;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  pointer-events: auto; 
 }
 
 
 /* 更多 */
-.more{
+
+.more {
   width: 200rpx;
   color: #bfbfbf;
   margin: 0 auto;
@@ -91,7 +76,8 @@ page {
   font-size: 35rpx;
   text-align: center;
 }
-.more-icon{
+
+.more-icon {
   display: inline-block;
   width: 35rpx;
   height: 35rpx;

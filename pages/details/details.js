@@ -23,6 +23,14 @@ Page({
       this.setData({
         details
       })
+      wx.setNavigationBarTitle({
+        title: this.data.details.title
+      })
+    })
+  },
+  onShow: function(){
+    wx.setNavigationBarTitle({
+      title: "loading..."
     })
   },
   onHide: function(){
