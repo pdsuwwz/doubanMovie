@@ -28,7 +28,7 @@ Page({
   typesChange: function(e){
     if (Object.keys(e.target.dataset).length != 0){
       App.globalData.movieType = e.target.dataset.name
-      wx.reLaunch({
+      wx.navigateTo({
         url: '../index/index',
       })
     }

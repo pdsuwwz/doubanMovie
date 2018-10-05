@@ -1,5 +1,12 @@
 module.exports = {
   arrReplace: function(str){
     return str.join(' / ')
-  }
+  },
+  arrReplace2: function(arr){
+    var arrNew = []
+    arr.map(function (item, index) {
+      arrNew.push(item.name)
+    })
+    return arrNew.join(' / ')
+  },
 }
