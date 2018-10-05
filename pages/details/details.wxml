@@ -5,4 +5,7 @@
       <view class="poster" style="background-image: url({{details.images.small}})"></view>
     </view>
   </view>
+  <view>
+    <view></view>
+  </view>
 </view>

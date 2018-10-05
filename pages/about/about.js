@@ -1,4 +1,4 @@
-// pages/about/index.js
+// pages/about/about.js
 Page({
 
   /**
