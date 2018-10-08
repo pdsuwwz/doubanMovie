@@ -28,11 +28,13 @@ Page({
       })
     })
   },
-  onShow: function(){
+
+  onReady: function(){
     wx.setNavigationBarTitle({
       title: "loading..."
     })
   },
+
   onHide: function(){
     let { id, data } = this.data
     id = 0

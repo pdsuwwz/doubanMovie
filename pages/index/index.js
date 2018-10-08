@@ -13,6 +13,15 @@ Page({
 
   onLoad: function (options) {
     this.getMovieList()
+    wx.setNavigationBarTitle({
+      title: "loading..."
+    })
+  },
+
+  onShow: function (options) {
+    wx.setNavigationBarTitle({
+      title: App.globalData.movieType
+    })
   },
 
   getMovieList: function (callback) {

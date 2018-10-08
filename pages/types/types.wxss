@@ -22,4 +22,8 @@
   text-align: center;
   color: #fff;
   background-color: #08a3f5;
+  transition: 0.2s;
+}
+.types-wrap .item:active{
+  background-color: #0491dc;
 }
